@@ -116,6 +116,33 @@ body { font-family: 'Inter', sans-serif; color: var(--navy); line-height: 1.7; s
     line-height: 1.6;
 }
 
+/*founder-section*/
+.founders-section {
+    padding: 60px 0;
+    background: #f8f9fa; /* Light grey background to separate it from the navy sections */
+    color: #1B263B;
+}
+
+.founders-grid {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 30px;
+}
+
+.founder-card h3 {
+    font-size: 1.5rem;
+    color: #0D1B2A;
+    margin-bottom: 5px;
+}
+
+.founder-role {
+    font-weight: 600;
+    color: #415A77;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
 /* --- SERVICES --- */
 .services { padding: 5rem 0; background: var(--grey); }
 .section-title { font-size: 2.2rem; margin-bottom: 3rem; }
