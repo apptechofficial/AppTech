@@ -17,135 +17,50 @@ body { font-family: 'Inter', sans-serif; color: var(--navy); line-height: 1.7; s
 /* --- NAVIGATION --- */
 .navbar { background: var(--navy); padding: 1.2rem 0; position: sticky; top: 0; z-index: 100; }
 .navbar .container { display: flex; justify-content: space-between; align-items: center; }
-.logo { font-size: 1.8rem; font-weight: 700; color: var(--white); }
-.logo span { color: var(--light-blue); }
 .nav-links { display: flex; list-style: none; }
 .nav-links li { margin-left: 2rem; }
 .nav-links a { color: var(--grey); text-decoration: none; transition: 0.3s; font-size: 0.9rem; }
 .nav-links a:hover { color: var(--white); }
 .nav-btn { background: var(--blue); padding: 0.5rem 1rem; border-radius: 4px; }
 
+/* --- LOGO --- */
+.logo-wrapper { display: flex; flex-direction: column; align-items: flex-start; line-height: 1; cursor: pointer; }
+.logo-box { display: flex; align-items: center; font-size: 2rem; font-weight: 700; color: var(--white); }
+.tech { color: var(--light-blue); }
+.tagline { font-size: 0.65rem; text-transform: uppercase; letter-spacing: 2px; color: var(--grey); margin-top: 4px; }
+
 /* --- HERO --- */
 .hero { height: 85vh; background: linear-gradient(rgba(27, 38, 59, 0.8), rgba(27, 38, 59, 0.8)), url('https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=1500'); background-size: cover; display: flex; align-items: center; color: var(--white); }
 .hero h1 { font-size: 3.5rem; line-height: 1.2; margin-bottom: 1.5rem; }
 .hero p { font-size: 1.1rem; max-width: 600px; margin-bottom: 2rem; color: var(--grey); }
 
+/* --- FOUNDERS SECTION --- */
+.founders-grid { display: flex; justify-content: center; gap: 50px; flex-wrap: wrap; margin-top: 40px; }
+.founder-card h3 { font-size: 1.8rem; color: var(--navy); margin-bottom: 5px; }
+.founder-role { color: var(--blue); font-weight: 600; text-transform: uppercase; letter-spacing: 1px; font-size: 0.9rem; }
+
 /* --- WELCOME SECTION --- */
-.welcome-section {
-    padding: 100px 0 60px;
-    background-color: var(--white);
-}
+.welcome-section { padding: 100px 0 60px; background-color: var(--white); }
+.welcome-tag { color: var(--blue); text-transform: uppercase; letter-spacing: 3px; font-size: 0.9rem; margin-bottom: 10px; }
+.welcome-section h2 { font-size: 2.2rem; color: var(--navy); margin-bottom: 25px; }
+.welcome-text { max-width: 800px; margin: 0 auto; font-size: 1.1rem; color: #555; line-height: 1.8; }
+.welcome-divider { width: 60px; height: 4px; background: var(--light-blue); margin: 40px auto 0; border-radius: 2px; }
 
-.welcome-tag {
-    color: var(--blue);
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    font-size: 0.9rem;
-    margin-bottom: 10px;
-}
-
-.welcome-section h2 {
-    font-size: 2.2rem;
-    color: var(--navy);
-    margin-bottom: 25px;
-}
-
-.welcome-text {
-    max-width: 800px;
-    margin: 0 auto;
-    font-size: 1.1rem;
-    color: #555;
-    line-height: 1.8;
-}
-
-.welcome-divider {
-    width: 60px;
-    height: 4px;
-    background: var(--light-blue);
-    margin: 40px auto 0;
-    border-radius: 2px;
-}
 /* --- BUTTONS --- */
 .btn { padding: 0.8rem 1.8rem; text-decoration: none; border-radius: 5px; font-weight: 600; display: inline-block; transition: 0.3s; }
 .btn-primary { background: var(--blue); color: white; border: 1px solid var(--blue); }
 .btn-outline { border: 1px solid var(--grey); color: var(--grey); }
-.btn-primary:hover { background: var(--light-blue); }
 
-/* --- CORE VALUES STYLES --- */
-.values-section {
-    padding: 100px 0;
-    background-color: var(--white);
-}
-
-.values-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 40px;
-    margin-top: 50px;
-}
-
-.value-item {
-    padding: 20px;
-    border-left: 3px solid var(--grey);
-    transition: 0.4s;
-}
-
-.value-item:hover {
-    border-left: 3px solid var(--light-blue);
-    background: rgba(224, 225, 221, 0.2); /* Very faint grey on hover */
-}
-
-.value-number {
-    font-size: 3rem;
-    font-weight: 800;
-    color: var(--grey);
-    opacity: 0.5;
-    font-family: 'Courier New', monospace;
-    margin-bottom: 10px;
-}
-
-.value-item h3 {
-    font-size: 1.5rem;
-    color: var(--navy);
-    margin-bottom: 15px;
-}
-
-.value-item p {
-    color: #666;
-    font-size: 1rem;
-    line-height: 1.6;
-}
-
-/*founder-section*/
-.founders-section {
-    padding: 60px 0;
-    background: #f8f9fa; /* Light grey background to separate it from the navy sections */
-    color: #1B263B;
-}
-
-.founders-grid {
-    display: flex;
-    justify-content: center;
-    gap: 40px;
-    margin-top: 30px;
-}
-
-.founder-card h3 {
-    font-size: 1.5rem;
-    color: #0D1B2A;
-    margin-bottom: 5px;
-}
-
-.founder-role {
-    font-weight: 600;
-    color: #415A77;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-}
+/* --- CORE VALUES --- */
+.values-section { padding: 100px 0; background-color: var(--white); }
+.section-title { font-size: 2.2rem; margin-bottom: 3rem; }
+.values-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px; margin-top: 50px; }
+.value-item { padding: 20px; border-left: 3px solid var(--grey); transition: 0.4s; }
+.value-item:hover { border-left: 3px solid var(--light-blue); background: rgba(224, 225, 221, 0.2); }
+.value-number { font-size: 3rem; font-weight: 800; color: var(--grey); opacity: 0.5; font-family: 'Courier New', monospace; }
 
 /* --- SERVICES --- */
 .services { padding: 5rem 0; background: var(--grey); }
-.section-title { font-size: 2.2rem; margin-bottom: 3rem; }
 .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; }
 .card { background: white; padding: 2.5rem; border-radius: 8px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); transition: 0.3s; }
 .card:hover { transform: translateY(-10px); }
@@ -154,119 +69,34 @@ body { font-family: 'Inter', sans-serif; color: var(--navy); line-height: 1.7; s
 .card li::before { content: "• "; color: var(--blue); font-weight: bold; }
 
 /* --- CONTACT --- */
-/* Founders Section Styling */
-.founders-section {
-    padding: 60px 0;
-    background-color: #ffffff;
-    color: #1B263B;
-}
+.contact { padding: 80px 0; background: var(--navy); color: var(--white); }
+.contact-wrapper { display: flex; flex-wrap: wrap; gap: 50px; margin-top: 40px; }
+.contact-info, .contact-form { flex: 1; min-width: 300px; }
 
-.founders-grid {
-    display: flex;
-    justify-content: center;
-    gap: 50px;
-    flex-wrap: wrap;
-    margin-top: 30px;
-}
-
-.founder-card h3 {
-    font-size: 1.8rem;
-    margin-bottom: 5px;
-    color: #0D1B2A;
-}
-
-.founder-role {
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    color: #415A77;
-    font-weight: 600;
-}
-
-/* --- CONTACT FORM UPDATES --- */
-.contact-form {
-    display: flex;
-    flex-direction: column;
-    gap: 15px; /* Spaces out the form groups vertically */
-}
-
-.form-group {
-    display: flex;
-    flex-direction: column; /* Places label directly above the input */
-    text-align: left;
-}
-
-.form-group label {
-    font-size: 0.9rem;
-    color: var(--grey); /* Soft white/grey color for labels on navy background */
-    margin-bottom: 5px;
-    font-weight: 600;
-}
+.contact-form { display: flex; flex-direction: column; gap: 15px; }
+.form-group { display: flex; flex-direction: column; text-align: left; }
+.form-group label { display: block; font-size: 0.85rem; color: var(--grey); margin-bottom: 5px; font-weight: 600; }
 
 .contact-form input, 
 .contact-form select, 
 .contact-form textarea {
     width: 100%;
-    padding: 10px;
-    border-radius: 4px;
+    padding: 12px;
+    border-radius: 5px;
     border: none;
-    background: var(--white); /* White background as seen in your screenshot */
-    color: var(--navy) !important; /* Dark text so you can see what you type */
-    font-family: 'Inter', sans-serif;
+    background: var(--white);
+    font-family: inherit;
+    color: var(--navy) !important; /* Forces dark text visibility */
     font-size: 1rem;
 }
 
-/* Optional: Subtle focus effect */
-.contact-form input:focus, 
-.contact-form textarea:focus {
-    outline: 2px solid var(--light-blue);
-}
+.contact-form .btn-primary { width: auto; align-self: flex-start; margin-top: 10px; cursor: pointer; }
 
-.contact-form .btn-primary {
-    width: auto;
-    align-self: flex-start; /* Aligns button to the left like the inputs */
-    margin-top: 10px;
-    cursor: pointer;
-}
 /* --- FOOTER --- */
 footer { text-align: center; padding: 2rem; background: #0b111a; color: #777; font-size: 0.8rem; }
 
 /* --- RESPONSIVE --- */
 @media (max-width: 768px) {
     .hero h1 { font-size: 2.5rem; }
-    .contact-wrapper { grid-template-columns: 1fr; }
-    .nav-links { display: none; } /* Mobile menu would require more JS */
-}
-
-/* --- APPTECH CSS LOGO --- */
-/* --- CLEANED UP LOGO STYLES --- */
-.logo-wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    line-height: 1;
-    cursor: pointer;
-}
-
-.logo-box {
-    display: flex;
-    align-items: center;
-    font-size: 2rem; /* I made it slightly bigger now that brackets are gone */
-    font-weight: 700;
-}
-
-.brand-name {
-    color: var(--white);
-    letter-spacing: -1px;
-}
-
-.tech {
-    color: var(--light-blue); /* The accent color for "Tech" */
-}
-
-.tagline {
-    font-size: 0.65rem;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    color: var(--grey);
-    margin-top: 4px;
+    .nav-links { display: none; }
 }
