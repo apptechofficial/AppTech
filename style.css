@@ -154,52 +154,64 @@ body { font-family: 'Inter', sans-serif; color: var(--navy); line-height: 1.7; s
 .card li::before { content: "• "; color: var(--blue); font-weight: bold; }
 
 /* --- CONTACT --- */
-.contact {
-    padding: 80px 0;
-    background: var(--navy);
-    color: var(--white);
+/* Founders Section Styling */
+.founders-section {
+    padding: 60px 0;
+    background-color: #ffffff;
+    color: #1B263B;
 }
 
-.contact-wrapper {
+.founders-grid {
     display: flex;
-    flex-wrap: wrap;
+    justify-content: center;
     gap: 50px;
-    margin-top: 40px;
+    flex-wrap: wrap;
+    margin-top: 30px;
 }
 
-.contact-info, .contact-form {
-    flex: 1;
-    min-width: 300px;
+.founder-card h3 {
+    font-size: 1.8rem;
+    margin-bottom: 5px;
+    color: #0D1B2A;
 }
 
+.founder-role {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #415A77;
+    font-weight: 600;
+}
+
+/* Contact Form Clean Up */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
 
 .form-group {
-    margin-bottom: 15px;
-    text-align: left;
+    display: flex;
+    flex-direction: column;
 }
 
 .form-group label {
-    display: block;
-    font-size: 0.85rem;
-    color: var(--soft-grey);
     margin-bottom: 5px;
+    font-weight: 600;
+    color: #ffffff; /* Contrast against navy background */
 }
 
-
 .contact-form input, 
+.contact-form select, 
 .contact-form textarea {
-    width: 100%;
     padding: 12px;
     border-radius: 5px;
     border: none;
-    background: var(--soft-grey);
+    background-color: #E0E1DD;
+    color: #1B263B;
     font-family: inherit;
-    color: var(--navy);
 }
 
-.contact-form .btn-primary {
-    width: 100%;
-    margin-top: 10px;
+.contact-form select {
     cursor: pointer;
 }
 
