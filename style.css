@@ -182,39 +182,51 @@ body { font-family: 'Inter', sans-serif; color: var(--navy); line-height: 1.7; s
     font-weight: 600;
 }
 
-/* Contact Form Clean Up */
+/* --- CONTACT FORM UPDATES --- */
 .contact-form {
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 15px; /* Spaces out the form groups vertically */
 }
 
 .form-group {
     display: flex;
-    flex-direction: column;
+    flex-direction: column; /* Places label directly above the input */
+    text-align: left;
 }
 
 .form-group label {
+    font-size: 0.9rem;
+    color: var(--grey); /* Soft white/grey color for labels on navy background */
     margin-bottom: 5px;
     font-weight: 600;
-    color: #ffffff; /* Contrast against navy background */
 }
 
 .contact-form input, 
 .contact-form select, 
 .contact-form textarea {
-    padding: 12px;
-    border-radius: 5px;
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
     border: none;
-    background-color: #E0E1DD;
-    color: #1B263B;
-    font-family: inherit;
+    background: var(--white); /* White background as seen in your screenshot */
+    color: var(--navy) !important; /* Dark text so you can see what you type */
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
 }
 
-.contact-form select {
+/* Optional: Subtle focus effect */
+.contact-form input:focus, 
+.contact-form textarea:focus {
+    outline: 2px solid var(--light-blue);
+}
+
+.contact-form .btn-primary {
+    width: auto;
+    align-self: flex-start; /* Aligns button to the left like the inputs */
+    margin-top: 10px;
     cursor: pointer;
 }
-
 /* --- FOOTER --- */
 footer { text-align: center; padding: 2rem; background: #0b111a; color: #777; font-size: 0.8rem; }
 
