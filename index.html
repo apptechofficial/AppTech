@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AppTech | Bridging Tech and Human Connection</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -22,8 +21,8 @@
             </div>
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
+                <li><a href="#founders">Founders</a></li>
                 <li><a href="#services">Services</a></li>
-                <li><a href="#about">Our Values</a></li>
                 <li><a href="#contact" class="nav-btn">Start a Project</a></li>
             </ul>
         </div>
@@ -55,6 +54,19 @@
                     <p class="founder-role">Co-Founder</p>
                 </div>
             </div>
+            <div class="welcome-divider"></div>
+        </div>
+    </section>
+
+    <section id="welcome" class="welcome-section">
+        <div class="container text-center">
+            <h3 class="welcome-tag">Welcome to AppTech</h3>
+            <h2>Where Technology Meets the Human Touch.</h2>
+            <p class="welcome-text">
+                In a world moving rapidly toward total automation, we noticed something missing: <strong>The Human Element.</strong> 
+                At AppTech, we don’t just write code or configure servers; we build bridges. Whether you are a small business looking 
+                for your first professional website or a company needing robust data communication, we ensure technology serves you.
+            </p>
         </div>
     </section>
 
@@ -65,11 +77,17 @@
                 <div class="card">
                     <div class="card-icon">🌐</div>
                     <h3>Web Development</h3>
-                    <p>Modern, responsive websites built with clean code and high performance in mind.</p>
+                    <p>Modern, responsive websites built with high performance and clean code.</p>
+                </div>
+
+                <div class="card">
+                    <div class="card-icon">📡</div>
+                    <h3>Network Infrastructure</h3>
+                    <p>Expert Data Communication and Networking solutions for modern businesses.</p>
                     <ul>
-                        <li>Custom Portfolios</li>
-                        <li>E-commerce Platforms</li>
-                        <li>UI/UX Design</li>
+                        <li>LAN/WAN Design</li>
+                        <li>Network Security</li>
+                        <li>Wireless Optimization</li>
                     </ul>
                 </div>
 
@@ -77,22 +95,6 @@
                     <div class="card-icon">💻</div>
                     <h3>IT Foundations</h3>
                     <p>Essential digital infrastructure to keep your business running smoothly.</p>
-                    <ul>
-                        <li>System Setup</li>
-                        <li>Security Basics</li>
-                        <li>Technical Support</li>
-                    </ul>
-                </div>
-
-                <div class="card">
-                    <div class="card-icon">📡</div>
-                    <h3>Network & Data</h3>
-                    <p>Expert Data Communication and Networking solutions for modern businesses.</p>
-                    <ul>
-                        <li>LAN/WAN Design</li>
-                        <li>Network Security</li>
-                        <li>Wireless Optimization</li>
-                    </ul>
                 </div>
             </div>
         </div>
@@ -103,9 +105,9 @@
             <div class="contact-wrapper">
                 <div class="contact-info">
                     <h2>Let's Connect</h2>
-                    <p>Ready to bridge the gap? Contact our founders today.</p>
+                    <p>Ready to bridge the gap? Contact us today.</p>
                     <div class="info-item"><strong>Email:</strong> <span>apptech.official@gmail.com</span></div>
-                    <div class="info-item"><strong>Phone:</strong> <span>+260 975 212 655</span><br><span style="margin-left:65px;">+260 773 562 277</span></div>
+                    <div class="info-item"><strong>Phone:</strong> <span>+260 975 212 655</span></div>
                     <div class="info-item"><strong>Location:</strong> <span>Ndola, Zambia</span></div>
                 </div>
 
@@ -119,11 +121,18 @@
                     </div>
 
                     <div class="form-group">
-                        <label>Service Required</label>
-                        <select name="service">
-                            <option value="Web Development">Web Development</option>
-                            <option value="IT Foundations">IT Foundations</option>
-                            <option value="Network Infrastructure">Network Infrastructure</option>
+                        <label>Email Address</label>
+                        <input type="email" name="email" placeholder="Email Address" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Estimated Budget (ZMW)</label>
+                        <select name="budget">
+                            <option value="Not Sure">I'm not sure yet</option>
+                            <option value="Under 2000">Under K2,000</option>
+                            <option value="2000-5000">K2,000 - K5,000</option>
+                            <option value="5000-10000">K5,000 - K10,000</option>
+                            <option value="10000+">K10,000+</option>
                         </select>
                     </div>
 
