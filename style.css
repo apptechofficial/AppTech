@@ -67,7 +67,92 @@ body { font-family: 'Inter', sans-serif; color: var(--navy); line-height: 1.7; s
 .card-icon { font-size: 2.5rem; margin-bottom: 1rem; }
 .card ul { list-style: none; margin-top: 1rem; text-align: left; }
 .card li::before { content: "• "; color: var(--blue); font-weight: bold; }
+/* --- PRICING SECTION LAYOUT --- */
+.pricing-section { padding: 80px 0; background: var(--grey); }
 
+.pricing-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.pricing-card {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    transition: 0.3s;
+}
+
+.pricing-card.featured {
+    border: 2px solid var(--blue);
+    transform: scale(1.03);
+}
+
+.pricing-card:hover { transform: translateY(-5px); box-shadow: 0 10px 20px rgba(0,0,0,0.1); }
+
+/* --- NETWORKING ROW LAYOUT --- */
+.networking-row {
+    display: flex;
+    gap: 15px;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.net-item {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-left: 4px solid var(--blue);
+}
+
+.net-label { font-weight: 600; color: var(--navy); }
+.net-price { font-weight: 700; color: var(--blue); font-size: 1.1rem; }
+
+/* --- CATEGORY TITLES --- */
+.category-title {
+    text-align: left;
+    color: var(--navy);
+    margin-bottom: 20px;
+    font-size: 1.4rem;
+    border-bottom: 1px solid var(--light-blue);
+    padding-bottom: 5px;
+}
+
+/* --- WHATSAPP BUTTON --- */
+.whatsapp-float {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: #25d366;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    z-index: 1000;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
+}
+
+.whatsapp-icon { width: 30px; height: 30px; margin-right: 10px; }
+
+/* Mobile Support */
+@media (max-width: 900px) {
+    .pricing-row, .networking-row {
+        flex-direction: column;
+    }
+    .pricing-card.featured { transform: scale(1); }
+}
 /* --- CONTACT --- */
 .contact { padding: 80px 0; background: var(--navy); color: var(--white); }
 .contact-wrapper { display: flex; flex-wrap: wrap; gap: 50px; margin-top: 40px; }
