@@ -153,32 +153,62 @@ body { font-family: 'Inter', sans-serif; color: var(--navy); line-height: 1.7; s
     }
     .pricing-card.featured { transform: scale(1); }
 }
-<section id="contact" class="contact">
-        <div class="container">
-            <div class="contact-wrapper side-by-side">
-                <div class="contact-info">
-                    <h2>Let's Connect</h2>
-                    <p>Ready to bridge the gap? We'd love to help with your networking or web needs.</p>
-                    <div class="info-item"><strong>Email:</strong> <span>apptech.official@gmail.com</span></div>
-                    <div class="info-item"><strong>Phone:</strong> <span>+260 975 212 655</span> / <span>+260 773 562 277</span></div>
-                </div>
+/* --- CONTACT SECTION SIDE-BY-SIDE FIX --- */
+.contact-wrapper.side-by-side {
+    display: flex;
+    flex-wrap: wrap; /* Allows wrapping if screen is too small */
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+    margin-top: 40px;
+}
 
-                <form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
-                    <input type="hidden" name="access_key" value="85607426-e470-4575-8f51-a5264ac179c3">
-                    <input type="hidden" name="redirect" value="https://apptechofficial.github.io/AppTech/thank-you.html">
-                    <div class="form-group">
-                        <label>Name</label>
-                        <input type="text" name="name" required>
-                    </div>
-                    <div class="form-group">
-                        <label>Message</label>
-                        <textarea name="message" rows="4" required></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Send Message</button>
-                </form>
-            </div>
-        </div>
-    </section>
+.contact-info {
+    flex: 1;
+    min-width: 300px; /* Prevents info from getting too skinny */
+    text-align: left;
+}
+
+.contact-form {
+    flex: 1.5; /* Gives the form slightly more room than the info text */
+    min-width: 300px;
+    background: rgba(255, 255, 255, 0.05); /* Soft dark background */
+    padding: 30px;
+    border-radius: 12px;
+}
+
+/* --- INPUT VISIBILITY FIX --- */
+.contact-form input, 
+.contact-form textarea {
+    width: 100% !important;
+    padding: 12px;
+    margin-top: 5px;
+    border-radius: 6px;
+    border: 1px solid var(--grey);
+    background-color: var(--white) !important; /* Forces white background */
+    color: var(--navy) !important; /* Forces dark text you can actually see */
+    font-size: 1rem;
+    display: block;
+}
+
+/* Ensure labels are visible against the dark section background */
+.contact-form label {
+    display: block;
+    margin-bottom: 5px;
+    color: var(--grey);
+    font-weight: 600;
+}
+
+/* MOBILE FIX: Stacks them vertically on phones */
+@media (max-width: 768px) {
+    .contact-wrapper.side-by-side {
+        flex-direction: column;
+    }
+    .contact-info, .contact-form {
+        flex: none;
+        width: 100%;
+    }
+}
 
 /* --- FOOTER --- */
 footer { text-align: center; padding: 2rem; background: #0b111a; color: #777; font-size: 0.8rem; }
