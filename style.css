@@ -186,15 +186,17 @@ body { font-family: 'Inter', sans-serif; color: var(--navy); line-height: 1.7; s
 }
 
 
-.contact-form input, 
+contact-form input, 
 .contact-form textarea {
-    width: 100%;
+    width: 100% !important;
     padding: 12px;
-    border-radius: 5px;
-    border: none;
-    background: var(--soft-grey);
-    font-family: inherit;
-    color: var(--white);
+    margin-top: 5px;
+    border-radius: 6px;
+    border: 1px solid var(--grey);
+    background-color: var(--white) !important; /* Forces white background */
+    color: var(--navy) !important; /* Forces dark text you can actually see */
+    font-size: 1rem;
+    display: block;
 }
 
 .contact-form .btn-primary {
