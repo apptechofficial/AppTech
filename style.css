@@ -94,24 +94,19 @@ body { font-family: 'Inter', sans-serif; color: var(--navy); line-height: 1.7; s
     transform: scale(1.03);
 }
 
+/* Styling for the Note at the bottom */
 .pricing-note {
-    width: 100%; /* Spans the full width of the container */
-    max-width: 1100px; /* Matches the width of your 3 cards combined */
-    margin: 20px auto 40px; /* Centers it and adds space before the next section */
-    padding: 15px 20px;
-    background: rgba(255, 255, 255, 0.05); /* Subtle dark-mode friendly box */
-    border-left: 4px solid #3b82f6; /* A blue accent line to grab attention */
-    border-radius: 4px;
-    font-size: 0.9rem;
-    color: #cbd5e1; /* Soft grey text color */
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto 50px; /* Centers the note and adds space below */
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.05); /* Works for dark or light backgrounds */
+    border-left: 5px solid #3b82f6; /* Blue accent line */
+    color: #64748b;
+    font-size: 0.95rem;
     line-height: 1.6;
+    clear: both; /* Ensures no elements float next to it */
 }
-
-.pricing-note strong {
-    color: #ffffff; /* Makes the word 'Note' stand out */
-}
-
-
 .pricing-card:hover { transform: translateY(-5px); box-shadow: 0 10px 20px rgba(0,0,0,0.1); }
 
 /* --- NETWORKING ROW LAYOUT --- */
