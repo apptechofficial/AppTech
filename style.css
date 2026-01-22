@@ -94,6 +94,19 @@ body { font-family: 'Inter', sans-serif; color: var(--navy); line-height: 1.7; s
     transform: scale(1.03);
 }
 
+.pricing-note {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 15px;
+    border-left: 4px solid var(--blue);
+    background: rgba(255, 255, 255, 0.05);
+    font-style: italic;
+    font-size: 0.9rem;
+    color: var(--grey);
+    line-height: 1.5;
+}
+
+
 .pricing-card:hover { transform: translateY(-5px); box-shadow: 0 10px 20px rgba(0,0,0,0.1); }
 
 /* --- NETWORKING ROW LAYOUT --- */
