@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://apptechofficial.github.io/AppTech/</loc>
+    <loc>https://apptechofficial.work.gd/</loc>
     <lastmod>2026-01-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
@@ -13,4 +13,7 @@
     <priority>0.3</priority>
     
   </url>
+</urlset>
+<?xml version="1.0" encoding="UTF-8"?>
+<
 </urlset>
