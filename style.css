@@ -70,69 +70,84 @@ body { font-family: 'Inter', sans-serif; color: var(--navy); line-height: 1.7; s
 /* --- PRICING SECTION LAYOUT --- */
 .pricing-section { padding: 80px 0; background: var(--grey); }
 
-/* Container for the cards */
 .pricing-row {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: stretch; /* Forces cards to be the same height */
+    align-items: stretch; /* Keeps all cards in a row the same height */
     gap: 20px;
-    flex-wrap: wrap; /* Allows wrapping on smaller desktop screens */
+    flex-wrap: wrap;       /* FIXED: Allows cards to move to the next line on desktop */
     margin-bottom: 20px;
 }
 
 .pricing-card {
-    flex: 1; /* Makes cards take up equal width */
-    min-width: 280px; /* Prevents them from getting too skinny */
+    flex: 1; 
+    min-width: 300px;     /* FIXED: Prevents cards from getting too skinny */
     max-width: 350px;
     background: white;
     padding: 30px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between; /* Keeps buttons aligned at the bottom */
+    justify-content: space-between; 
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    transition: 0.3s;
+    border-radius: 10px;
 }
 
-/* Styling the note so it's clear and centered */
+/* --- PRICING SECTION LAYOUT --- */
+.pricing-section { padding: 80px 0; background: var(--grey); }
+
+.pricing-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch; /* Keeps all cards in a row the same height */
+    gap: 20px;
+    flex-wrap: wrap;       /* FIXED: Allows cards to move to the next line on desktop */
+    margin-bottom: 20px;
+}
+
+.pricing-card {
+    flex: 1; 
+    min-width: 300px;     /* FIXED: Prevents cards from getting too skinny */
+    max-width: 350px;
+    background: white;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    transition: 0.3s;
+    border-radius: 10px;
+}
+
+/* Updated Pricing Note for better visibility and placement */
 .pricing-note {
     width: 100%;
     max-width: 1100px;
-    margin: 20px auto;
-    padding: 15px 25px;
-    background: #f1f5f9; /* Light grey background for the note */
+    margin: 30px auto; 
+    padding: 20px;
+    background: #f8fafc; /* Light background to separate from grey section */
     border-left: 5px solid var(--blue);
     color: #475569;
-    font-size: 0.9rem;
-    line-height: 1.6;
-    text-align: left;
-}
-
-/* Styling for the Note at the bottom */
-.pricing-note {
-    width: 100%;
-    /* Max-width matches the width of your 3 cards combined for a clean look */
-    max-width: 100%; 
-    margin: 30px 0; 
-    padding: 20px;
-    background: #f8fafc; /* Light background to contrast with the grey section */
-    border-left: 5px solid var(--blue); /* Uses your existing blue variable */
-    color: #475569;
-    font-size: 0.9rem;
+    font-size: 0.95rem;
     line-height: 1.6;
     border-radius: 0 8px 8px 0;
+    clear: both;
 }
 
-/* Ensure the pricing row stacks on mobile so it doesn't break */
-@media (max-width: 768px) {
-    .pricing-row {
-        flex-direction: column;
-        align-items: center;
-    }
-    .pricing-card {
-        width: 100%;
-        max-width: 400px;
-    }
+/* Contact Section Fix for Desktop */
+.contact-wrapper {
+    display: flex;
+    flex-wrap: wrap;      /* FIXED: Stacks info and form on mobile, side-by-side on desktop */
+    gap: 50px;
+    margin-top: 40px;
 }
-.pricing-card:hover { transform: translateY(-5px); box-shadow: 0 10px 20px rgba(0,0,0,0.1); }
+
+.contact-info, .contact-form {
+    flex: 1;
+    min-width: 320px;     /* FIXED: Ensures form elements have enough space */
+}
 
 /* --- NETWORKING ROW LAYOUT --- */
 .networking-row {
